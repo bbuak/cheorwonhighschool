@@ -36,6 +36,11 @@ def home(request):
     return render(request, 'home.html')
 
 def regpg(request):
+    grade = request.GET.get('grade')
+    if grade == '1grade-1class':
+        return render(request, '1-2.html')
+    elif grade == '1grade-2class':
+        return render(request, '1-3.html')
     return render(request, 'regpg.html')    
 
 def onetwo(request):
