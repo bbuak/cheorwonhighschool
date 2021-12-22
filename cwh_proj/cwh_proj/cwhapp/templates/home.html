@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철원고등학교</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+            </div>
+            <nav>
+                <a href="https://cheorwon.gwe.hs.kr/main.do">철원고등학교</a>
+            </nav>
+        </header>
+        <div id="시간표">
+            <h1>시간표</h1>
+<a href="{% url 'class' %}">시간표</a>
+        </div>
+
+        <div id="급식표">
+            {{rice}}
+        </div>
+            
+</body>
+
+</html>
